@@ -25,9 +25,6 @@ passport.deserializeUser((user: any, done) => {
   done(null, user);
 });
 
-passport.serializeUser((user, done) => done(null, user));
-passport.deserializeUser((user, done) => done(null, user));
-
 // Google OAuth 2.0 strategy configuration
 passport.use(
   new GoogleStrategy(
